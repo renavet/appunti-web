@@ -1,0 +1,103 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+]{article}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={italiano-educazione civica I diritti dei lavoratori},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{italiano-educazione civica I diritti dei lavoratori}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{longtable}[]{@{}ll@{}}
+\caption{}\label{tablepress-3194}\tabularnewline
+\toprule\noalign{}
+& variazione 1990-2020 \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+& variazione 1990-2020 \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Lituania & 276,3 \\
+Estonia & 237,2 \\
+Lettonia & 200,5 \\
+Slovacchia & 129,6 \\
+Repubblica Ceca & 112,4 \\
+Polonia & 96,5 \\
+Irlanda & 85,5 \\
+Ungheria & 72,7 \\
+Slovenia & 69,3 \\
+Svezia & 63 \\
+Danimarca & 38,7 \\
+Lussemburgo & 38,2 \\
+Germania & 33,7 \\
+Finlandia & 31,8 \\
+Francia & 31,1 \\
+Grecia & 30,5 \\
+Belgio & 25,5 \\
+Austria & 24,9 \\
+Paesi Bassi & 15,5 \\
+Portogallo & 13,7 \\
+Spagna & 6,2 \\
+Italia & -2,9 \\
+\end{longtable}
+
+\end{document}

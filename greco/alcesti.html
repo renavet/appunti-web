@@ -1,0 +1,564 @@
+<!DOCTYPE html> <html lang="en"><head>
+<title>Alcesti</title>
+<base href="..">
+<meta name="pathname" content="greco/alcesti.html">
+<meta name="description" content="Appunti-R - Alcesti">
+<meta property="og:title" content="Alcesti">
+<meta property="og:description" content="Appunti-R - Alcesti">
+<meta property="og:type" content="website">
+<meta property="og:url" content="greco/alcesti.html">
+<meta property="og:image" content="undefined">
+<meta charset="UTF-8"><meta property="og:site_name" content="Appunti-R"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0"><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="site-lib/rss.xml"><script async="" id="webpage-script" src="site-lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="site-lib/media/favicon.ico"><link rel="stylesheet" href="site-lib/styles/obsidian.css"><link rel="preload" href="site-lib/styles/other-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/other-plugins.css"></noscript><link rel="stylesheet" href="site-lib/styles/theme.css"><link rel="preload" href="site-lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="site-lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/main-styles.css"></noscript><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-vertical-spacing:1.3em;--sidebar-margin:12px}:root{background-color:#202124}.sidebar{height:100%;font-size:14px;z-index:10;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));position:relative;overflow:hidden;overflow:clip;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}#left-sidebar{left:0}#right-sidebar{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}.sidebar.floating{position:absolute}.sidebar .leaf-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .leaf-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}#left-sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}#right-sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar #left-sidebar-content,.sidebar #right-sidebar-content{contain:none!important;container-type:normal!important;animation:none!important}.sidebar:has(.leaf-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:calc(2.3em + 2 * var(--sidebar-margin));width:var(--sidebar-width);padding:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}#left-sidebar .sidebar-topbar{left:0;flex-direction:row;border-top-right-radius:var(--radius-l)}#right-sidebar .sidebar-topbar{right:0;flex-direction:row-reverse;border-top-left-radius:var(--radius-l)}#left-sidebar .topbar-content{margin-right:calc(2.3em + var(--sidebar-margin));flex-direction:row}#right-sidebar .topbar-content{margin-left:calc(2.3em + var(--sidebar-margin));flex-direction:row-reverse}.topbar-content{overflow:hidden visible;overflow:clip visible;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:2px!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}#left-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}#right-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.feature-title{margin-left:1px;text-transform:uppercase;letter-spacing:.06em;margin-top:.75em;margin-bottom:.75em}.feature-header{display:flex;align-items:center;padding-top:0;font-size:1em;padding-left:0}body.floating-sidebars .sidebar{position:absolute}body{transition:background-color var(--color-fade-speed) ease-in-out}#navbar:not(:empty){display:flex;align-items:center;justify-content:space-between;padding:.5em 1em;width:100%}#main{display:flex;flex-direction:column;height:100%;width:100%;align-items:stretch;justify-content:center}#main-horizontal{display:flex;flex-direction:row;flex-grow:1;width:100%;align-items:stretch;justify-content:center}#center-content{flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0!important;transition:opacity .2s ease-in-out;pointer-events:none}#center-content>.obsidian-document{padding-left:2em;padding-right:1em;margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}body #center-content>.obsidian-document>.markdown-preview-sizer{padding-bottom:80vh;width:100%;max-width:var(--line-width);flex-basis:var(--line-width);transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document>div{width:100%!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document:not([data-type=markdown]).embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}#center-content>.obsidian-document:not([data-type=markdown]).embed>*{max-width:100%;max-height:100%;object-fit:contain}:not(h1,h2,h3,h4,h5,h6,li):has(> :is(.math,table)){overflow-x:auto!important}#center-content>.obsidian-document:not([data-type=markdown]){overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.obsidian-document[data-type=attachment]{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;width:100%}.obsidian-document[data-type=attachment]>*{outline:0;border:none;box-shadow:none}.obsidian-document[data-type=attachment] :is(img){max-width:90%;max-height:90%;object-fit:contain}.obsidian-document[data-type=attachment]>:is(audio){width:100%;max-width:min(90%,var(--line-width))}.obsidian-document[data-type=attachment]>:is(embed,iframe,video){width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}.canvas-wrapper>:is(.header,.footer){z-index:100;position:absolute;display:flex;justify-content:center;flex-direction:column;width:100%;align-items:center}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){let e=document.querySelectorAll("link[itemprop='include']");for(const t of e){let e=t.getAttribute("href");try{let o="";if(e.startsWith("https:")||e.startsWith("http:")||"file:"!=window.location.protocol){const n=await fetch(e);if(!n.ok){console.log("Could not include file: "+e),t?.remove();continue}o=await n.text()}else{const t=document.getElementById(btoa(encodeURI(e)));if(t){const e=JSON.parse(decodeURI(atob(t.getAttribute("value")??"")));o=e?.data??""}}let n=document.createRange().createContextualFragment(o);t.before(n),t.remove(),console.log("Included text: "+o),console.log("Included file: "+e)}catch(o){t?.remove(),console.log("Could not include file: "+e,o);continue}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script")));!function e(n){let l=o[n],c=n+1;l?(l&&"true"!=l.getAttribute("loaded")||n<o.length&&e(c),n<o.length&&l.addEventListener("load",(()=>e(c)))):n<o.length?e(c):t()}(0)}</script></head><body class="publish css-settings-manager mod-linux show-inline-title show-ribbon show-view-header is-focused"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="parsed-feature-container" style="display: contents;"><link itemprop="include" href="site-lib/html/custom-head-content-content.html"></div><div id="main"><div id="navbar"></div><div id="main-horizontal"><div id="left-content" class="leaf" style="--sidebar-width: var(--sidebar-width-left);"></div><div id="center-content" class="leaf"><div class="obsidian-document markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings allow-fold-lists show-indentation-guide show-properties" data-type="markdown"><style id="MJX-CHTML-styles">mjx-c.mjx-c1D713.TEX-I::before{padding:.694em .651em .205em 0;content:"ψ"}mjx-c.mjx-c1D712.TEX-I::before{padding:.442em .626em .204em 0;content:"χ"}mjx-c.mjx-c1D702.TEX-I::before{padding:.442em .497em .216em 0;content:"η"}mjx-c.mjx-c1D6FF.TEX-I::before{padding:.717em .444em .01em 0;content:"δ"}mjx-c.mjx-c1D706.TEX-I::before{padding:.694em .583em .012em 0;content:"λ"}mjx-c.mjx-c1D6FE.TEX-I::before{padding:.441em .543em .216em 0;content:"γ"}mjx-c.mjx-c1D70E.TEX-I::before{padding:.431em .571em .011em 0;content:"σ"}mjx-c.mjx-c1D716.TEX-I::before{padding:.431em .406em .011em 0;content:"ϵ"}mjx-c.mjx-c1D710.TEX-I::before{padding:.443em .54em .01em 0;content:"υ"}mjx-c.mjx-c1D703.TEX-I::before{padding:.705em .469em .01em 0;content:"θ"}mjx-c.mjx-c1D707.TEX-I::before{padding:.442em .603em .216em 0;content:"μ"}mjx-c.mjx-c1D70C.TEX-I::before{padding:.442em .517em .216em 0;content:"ρ"}mjx-c.mjx-c1D705.TEX-I::before{padding:.442em .576em .011em 0;content:"κ"}mjx-msup{display:inline-block;text-align:left}mjx-mo{display:inline-block;text-align:left}mjx-stretchy-h{display:inline-table;width:100%}mjx-stretchy-h>*{display:table-cell;width:0}mjx-stretchy-h>*>mjx-c{display:inline-block;transform:scaleX(1)}mjx-stretchy-h>*>mjx-c::before{display:inline-block;width:initial}mjx-stretchy-h>mjx-ext{overflow:clip visible;width:100%}mjx-stretchy-h>mjx-ext>mjx-c::before{transform:scaleX(500)}mjx-stretchy-h>mjx-ext>mjx-c{width:0}mjx-stretchy-h>mjx-beg>mjx-c{margin-right:-.1em}mjx-stretchy-h>mjx-end>mjx-c{margin-left:-.1em}mjx-stretchy-v{display:inline-block}mjx-stretchy-v>*{display:block}mjx-stretchy-v>mjx-beg{height:0}mjx-stretchy-v>mjx-end>mjx-c{display:block}mjx-stretchy-v>*>mjx-c{transform:scaleY(1);transform-origin:left center;overflow:hidden}mjx-stretchy-v>mjx-ext{display:block;height:100%;box-sizing:border-box;border:0 solid transparent;overflow:visible clip}mjx-stretchy-v>mjx-ext>mjx-c::before{width:initial;box-sizing:border-box}mjx-stretchy-v>mjx-ext>mjx-c{transform:scaleY(500) translateY(.075em);overflow:visible}mjx-mark{display:inline-block;height:0}mjx-mn{display:inline-block;text-align:left}mjx-c.mjx-c1D44E.TEX-I::before{padding:.441em .529em .01em 0;content:"a"}mjx-c.mjx-c1D465.TEX-I::before{padding:.442em .572em .011em 0;content:"x"}mjx-c.mjx-c3D::before{padding:.583em .778em .082em 0;content:"="}mjx-c.mjx-c1D44F.TEX-I::before{padding:.694em .429em .011em 0;content:"b"}mjx-c.mjx-c2C::before{padding:.121em .278em .194em 0;content:","}mjx-c.mjx-c3E::before{padding:.54em .778em .04em 0;content:">"}mjx-c.mjx-c30::before{padding:.666em .5em .022em 0;content:"0"}mjx-c.mjx-c2260::before{padding:.716em .778em .215em 0;content:"≠"}mjx-c.mjx-c31::before{padding:.666em .5em 0 0;content:"1"}mjx-c.mjx-c2264::before{padding:.636em .778em .138em 0;content:"≤"}mjx-c.mjx-c1D461.TEX-I::before{padding:.626em .361em .011em 0;content:"t"}mjx-c.mjx-c1D467.TEX-I::before{padding:.442em .465em .011em 0;content:"z"}mjx-c.mjx-c2228::before{padding:.598em .667em .022em 0;content:"∨"}mjx-c.mjx-c3C::before{padding:.54em .778em .04em 0;content:"<"}mjx-c.mjx-c21D4::before{padding:.526em 1em .025em 0;content:"⇔"}mjx-container[jax=CHTML]{line-height:0}mjx-container [space="1"]{margin-left:.111em}mjx-container [space="2"]{margin-left:.167em}mjx-container [space="3"]{margin-left:.222em}mjx-container [space="4"]{margin-left:.278em}mjx-container [space="5"]{margin-left:.333em}mjx-container [rspace="1"]{margin-right:.111em}mjx-container [rspace="2"]{margin-right:.167em}mjx-container [rspace="3"]{margin-right:.222em}mjx-container [rspace="4"]{margin-right:.278em}mjx-container [rspace="5"]{margin-right:.333em}mjx-container [size="s"]{font-size:70.7%}mjx-container [size=ss]{font-size:50%}mjx-container [size=Tn]{font-size:60%}mjx-container [size=sm]{font-size:85%}mjx-container [size=lg]{font-size:120%}mjx-container [size=Lg]{font-size:144%}mjx-container [size=LG]{font-size:173%}mjx-container [size=hg]{font-size:207%}mjx-container [size=HG]{font-size:249%}mjx-container [width=full]{width:100%}mjx-box{display:inline-block}mjx-block{display:block}mjx-itable{display:inline-table}mjx-row{display:table-row}mjx-row>*{display:table-cell}mjx-mtext{display:inline-block}mjx-mstyle{display:inline-block}mjx-merror{display:inline-block;color:red;background-color:#ff0}mjx-mphantom{visibility:hidden}mjx-assistive-mml{top:0;left:0;clip:rect(1px,1px,1px,1px);user-select:none;position:absolute!important;padding:1px 0 0!important;border:0!important;display:block!important;width:auto!important;overflow:hidden!important}mjx-assistive-mml[display=block]{width:100%!important}mjx-math{display:inline-block;text-align:left;line-height:0;text-indent:0;font-style:normal;font-weight:400;font-size:100%;font-size-adjust:none;letter-spacing:normal;border-collapse:collapse;overflow-wrap:normal;word-spacing:normal;white-space:nowrap;direction:ltr;padding:1px 0}mjx-container[jax=CHTML][display=true]{display:block;text-align:center;margin:1em 0}mjx-container[jax=CHTML][display=true][width=full]{display:flex}mjx-container[jax=CHTML][display=true] mjx-math{padding:0}mjx-container[jax=CHTML][justify=left]{text-align:left}mjx-container[jax=CHTML][justify=right]{text-align:right}mjx-mi{display:inline-block;text-align:left}mjx-c{display:inline-block}mjx-utext{display:inline-block;padding:.75em 0 .2em}mjx-c::before{display:block;width:0}.MJX-TEX{font-family:MJXZERO,MJXTEX}.TEX-B{font-family:MJXZERO,MJXTEX-B}.TEX-I{font-family:MJXZERO,MJXTEX-I}.TEX-MI{font-family:MJXZERO,MJXTEX-MI}.TEX-BI{font-family:MJXZERO,MJXTEX-BI}.TEX-S1{font-family:MJXZERO,MJXTEX-S1}.TEX-S2{font-family:MJXZERO,MJXTEX-S2}.TEX-S3{font-family:MJXZERO,MJXTEX-S3}.TEX-S4{font-family:MJXZERO,MJXTEX-S4}.TEX-A{font-family:MJXZERO,MJXTEX-A}.TEX-C{font-family:MJXZERO,MJXTEX-C}.TEX-CB{font-family:MJXZERO,MJXTEX-CB}.TEX-FR{font-family:MJXZERO,MJXTEX-FR}.TEX-FRB{font-family:MJXZERO,MJXTEX-FRB}.TEX-SS{font-family:MJXZERO,MJXTEX-SS}.TEX-SSB{font-family:MJXZERO,MJXTEX-SSB}.TEX-SSI{font-family:MJXZERO,MJXTEX-SSI}.TEX-SC{font-family:MJXZERO,MJXTEX-SC}.TEX-T{font-family:MJXZERO,MJXTEX-T}.TEX-V{font-family:MJXZERO,MJXTEX-V}.TEX-VB{font-family:MJXZERO,MJXTEX-VB}mjx-stretchy-h mjx-c,mjx-stretchy-v mjx-c{font-family:MJXZERO,MJXTEX-S1,MJXTEX-S4,MJXTEX,MJXTEX-A!important}@font-face{font-family:MJXZERO;src:url("site-lib/fonts/mathjax_zero.woff") format("woff")}@font-face{font-family:MJXTEX;src:url("site-lib/fonts/mathjax_main-regular.woff") format("woff")}@font-face{font-family:MJXTEX-B;src:url("site-lib/fonts/mathjax_main-bold.woff") format("woff")}@font-face{font-family:MJXTEX-I;src:url("site-lib/fonts/mathjax_math-italic.woff") format("woff")}@font-face{font-family:MJXTEX-MI;src:url("site-lib/fonts/mathjax_main-italic.woff") format("woff")}@font-face{font-family:MJXTEX-BI;src:url("site-lib/fonts/mathjax_math-bolditalic.woff") format("woff")}@font-face{font-family:MJXTEX-S1;src:url("site-lib/fonts/mathjax_size1-regular.woff") format("woff")}@font-face{font-family:MJXTEX-S2;src:url("site-lib/fonts/mathjax_size2-regular.woff") format("woff")}@font-face{font-family:MJXTEX-S3;src:url("site-lib/fonts/mathjax_size3-regular.woff") format("woff")}@font-face{font-family:MJXTEX-S4;src:url("site-lib/fonts/mathjax_size4-regular.woff") format("woff")}@font-face{font-family:MJXTEX-A;src:url("site-lib/fonts/mathjax_ams-regular.woff") format("woff")}@font-face{font-family:MJXTEX-C;src:url("site-lib/fonts/mathjax_calligraphic-regular.woff") format("woff")}@font-face{font-family:MJXTEX-CB;src:url("site-lib/fonts/mathjax_calligraphic-bold.woff") format("woff")}@font-face{font-family:MJXTEX-FR;src:url("site-lib/fonts/mathjax_fraktur-regular.woff") format("woff")}@font-face{font-family:MJXTEX-FRB;src:url("site-lib/fonts/mathjax_fraktur-bold.woff") format("woff")}@font-face{font-family:MJXTEX-SS;src:url("site-lib/fonts/mathjax_sansserif-regular.woff") format("woff")}@font-face{font-family:MJXTEX-SSB;src:url("site-lib/fonts/mathjax_sansserif-bold.woff") format("woff")}@font-face{font-family:MJXTEX-SSI;src:url("site-lib/fonts/mathjax_sansserif-italic.woff") format("woff")}@font-face{font-family:MJXTEX-SC;src:url("site-lib/fonts/mathjax_script-regular.woff") format("woff")}@font-face{font-family:MJXTEX-T;src:url("site-lib/fonts/mathjax_typewriter-regular.woff") format("woff")}@font-face{font-family:MJXTEX-V;src:url("site-lib/fonts/mathjax_vector-regular.woff") format("woff")}@font-face{font-family:MJXTEX-VB;src:url("site-lib/fonts/mathjax_vector-bold.woff") format("woff")}mjx-c.mjx-c1D6FC.TEX-I::before{padding:.442em .64em .011em 0;content:"α"}mjx-c.mjx-c1D704.TEX-I::before{padding:.442em .354em .01em 0;content:"ι"}mjx-c.mjx-c1D70F.TEX-I::before{padding:.431em .517em .013em 0;content:"τ"}mjx-c.mjx-c1D70A.TEX-I::before{padding:.441em .485em .011em 0;content:"ο"}mjx-c.mjx-c1D708.TEX-I::before{padding:.442em .53em 0 0;content:"ν"}</style><div class="markdown-preview-sizer markdown-preview-section"><div class="header"><h1 class="page-title heading inline-title" id="Alcesti_0">Alcesti</h1><div class="data-bar"></div></div><div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="Testo greco:" dir="auto" class="heading" id="Testo_greco_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Testo greco:</h3></div><div class="el-p"><p dir="auto"><strong>ΑΠΟΛΛΩΝ</strong><br>
+2 3 4 Ετλήν έχω Ω δώματ Αδμήτει, ἐν οἷς θῆσσαν τραπέζαν αἰνεσαι θεβέπερώας, Ζεύς γάρ κατάκτὰς παῖδὰ τὸν ἐμὸν αἰτιος Ασκληπιον», στέρνοισιν έμβαλων φλόγα οὐ δὴ χολωθεὶς τέκτονας Δίου πυρός κτείνω Κύκλωπας καί με θήτευείν πατήρ θνητώ παρ' · ἀνδρὶ τῶνδ᾽ ἀποιν᾿ ἡνάγκασεν. Ελθών' δὲ γαῖαν τήνδ᾽ ἐβουφόρβουν ξένω καὶ τόνδ' ἔσῴζον οἶκον ἐς τόδ᾽ ἡμέρας.</p></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="Analisi grammaticale e sintattica:" dir="auto" class="heading" id="Analisi_grammaticale_e_sintattica_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Analisi grammaticale e sintattica:</h3></div><div class="el-ol"><ol>
+<li data-line="0" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><strong>Ετλήν έχω Ω δώματ Αδμήτει</strong>
+<ul class="has-list-bullet">
+<li data-line="1" dir="auto"><span class="list-bullet"></span><strong>Ετλήν</strong>: verbo aoristo indicativo attivo, 1ª persona singolare di <em>τλάω</em>, "ho sopportato".</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span><strong>ἔχω</strong>: verbo presente indicativo attivo, 1ª persona singolare, "ho".</li>
+<li data-line="3" dir="auto"><span class="list-bullet"></span><strong>Ὦ δώματ᾽ Ἀδμήτει</strong>: vocativo poetico di "O case di Admeto", dove <strong>δῶματ</strong> è un plurale neutro di <em>δῶμα</em>.</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span><strong>Sintassi</strong>: Frase principale introduttiva; Apollo si rivolge direttamente alla dimora di Admeto.</li>
+</ul>
+</li>
+</ol></div><div class="el-hr"><hr></div><div class="el-ol"><ol start="2">
+<li data-line="0" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><strong>ἐν οἷς θῆσσαν τραπέζαν αἰνεσαι θεβέπερώας</strong>
+<ul class="has-list-bullet">
+<li data-line="1" dir="auto"><span class="list-bullet"></span><strong>ἐν οἷς</strong>: pronome relativo neutro plurale di <em>ὅς</em>, "nelle quali".</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span><strong>θῆσσαν</strong>: verbo aoristo indicativo attivo, 3ª persona singolare di <em>τίθημι</em>, "posero".</li>
+<li data-line="3" dir="auto"><span class="list-bullet"></span><strong>τραπέζαν</strong>: accusativo singolare di <em>τράπεζα</em>, "mensa".</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span><strong>αἰνεσαι</strong>: infinito presente medio-passivo di <em>αἰνέω</em>, "lodare".</li>
+<li data-line="5" dir="auto"><span class="list-bullet"></span><strong>θεβέπερώας</strong>: aggettivo accusativo plurale maschile, "divini ospiti".</li>
+<li data-line="6" dir="auto"><span class="list-bullet"></span><strong>Sintassi</strong>: Proposizione subordinata relativa che spiega il contesto; Apollo descrive l’ospitalità.</li>
+</ul>
+</li>
+</ol></div><div class="el-hr"><hr></div><div class="el-ol"><ol start="3">
+<li data-line="0" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><strong>Ζεύς γάρ κατάκτὰς παῖδὰ τὸν ἐμὸν αἴτιος Ἀσκληπιον</strong>
+<ul class="has-list-bullet">
+<li data-line="1" dir="auto"><span class="list-bullet"></span><strong>Ζεύς</strong>: soggetto nominativo singolare, "Zeus".</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span><strong>γάρ</strong>: particella esplicativa, "infatti".</li>
+<li data-line="3" dir="auto"><span class="list-bullet"></span><strong>κατάκτὰς</strong>: participio aoristo attivo, accusativo singolare di <em>κατακτείνω</em>, "uccisore".</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span><strong>παῖδὰ</strong>: accusativo singolare di <em>παῖς</em>, "figlio".</li>
+<li data-line="5" dir="auto"><span class="list-bullet"></span><strong>τὸν ἐμὸν</strong>: articolo e aggettivo possessivo, "il mio".</li>
+<li data-line="6" dir="auto"><span class="list-bullet"></span><strong>Αἴτιος</strong>: aggettivo nominativo singolare, "responsabile".</li>
+<li data-line="7" dir="auto"><span class="list-bullet"></span><strong>Ἀσκληπιόν</strong>: accusativo singolare, "Asclepio".</li>
+<li data-line="8" dir="auto"><span class="list-bullet"></span><strong>Sintassi</strong>: Frase principale esplicativa, Apollo accusa Zeus della morte di suo figlio Asclepio.</li>
+</ul>
+</li>
+</ol></div><div class="el-hr"><hr></div><div class="el-ol"><ol start="4">
+<li data-line="0" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><strong>στέρνοισιν ἔμβαλων φλόγα οὐ δὴ χολωθεὶς τέκτονας Δίου πυρός κτείνω Κύκλωπας</strong>
+<ul class="has-list-bullet">
+<li data-line="1" dir="auto"><span class="list-bullet"></span><strong>στέρνοισιν</strong>: dativo plurale di <em>στέρνον</em>, "petto".</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span><strong>ἔμβαλων</strong>: participio aoristo attivo, nominativo singolare di <em>ἐμβάλλω</em>, "gettando".</li>
+<li data-line="3" dir="auto"><span class="list-bullet"></span><strong>φλόγα</strong>: accusativo singolare di <em>φλόξ</em>, "fuoco".</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span><strong>οὐ δὴ</strong>: negazione enfatica, "non certo".</li>
+<li data-line="5" dir="auto"><span class="list-bullet"></span><strong>χολωθεὶς</strong>: participio aoristo passivo, nominativo singolare di <em>χολόω</em>, "irritato".</li>
+<li data-line="6" dir="auto"><span class="list-bullet"></span><strong>τέκτονας</strong>: accusativo plurale di <em>τέκτων</em>, "costruttori".</li>
+<li data-line="7" dir="auto"><span class="list-bullet"></span><strong>Δίου πυρός</strong>: genitivo di specificazione, "del fuoco di Zeus".</li>
+<li data-line="8" dir="auto"><span class="list-bullet"></span><strong>κτείνω</strong>: verbo presente indicativo attivo, 1ª persona singolare, "uccido".</li>
+<li data-line="9" dir="auto"><span class="list-bullet"></span><strong>Κύκλωπας</strong>: accusativo plurale di <em>Κύκλωψ</em>, "Ciclopi".</li>
+<li data-line="10" dir="auto"><span class="list-bullet"></span><strong>Sintassi</strong>: Frase complessa con subordinata causale implicita (partecipiale); Apollo descrive il motivo della sua azione.</li>
+</ul>
+</li>
+</ol></div><div class="el-hr"><hr></div><div class="el-ol"><ol start="5">
+<li data-line="0" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><strong>καί με θήτευείν πατήρ θνητῷ παρ' ἀνδρὶ τῶνδ᾽ ἀποιν᾿ ἡνάγκασεν</strong>
+<ul class="has-list-bullet">
+<li data-line="1" dir="auto"><span class="list-bullet"></span><strong>καί με</strong>: "e me".</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span><strong>θήτευείν</strong>: infinito presente attivo di <em>θητεύω</em>, "servire".</li>
+<li data-line="3" dir="auto"><span class="list-bullet"></span><strong>πατήρ</strong>: nominativo singolare, "padre".</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span><strong>θνητῷ παρ᾽ ἀνδρὶ</strong>: dativo di <em>θνητός</em> e <em>ἀνήρ</em>, "presso un uomo mortale".</li>
+<li data-line="5" dir="auto"><span class="list-bullet"></span><strong>τῶνδ᾽ ἀποιν᾿</strong>: genitivo di <em>ἀποινα</em>, "il prezzo di queste".</li>
+<li data-line="6" dir="auto"><span class="list-bullet"></span><strong>ἡνάγκασεν</strong>: verbo aoristo indicativo attivo, 3ª persona singolare di <em>ἀναγκάζω</em>, "mi costrinse".</li>
+<li data-line="7" dir="auto"><span class="list-bullet"></span><strong>Sintassi</strong>: Frase principale con un’infinitiva oggettiva; Zeus obbliga Apollo a servire Admeto come punizione.</li>
+</ul>
+</li>
+</ol></div><div class="el-hr"><hr></div><div class="el-ol"><ol start="6">
+<li data-line="0" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><strong>Ἐλθὼν δὲ γαῖαν τήνδ᾽ ἐβουφόρβουν ξένῳ καὶ τόνδ᾽ ἔσῳζον οἶκον ἐς τόδ᾽ ἡμέρας</strong>
+<ul class="has-list-bullet">
+<li data-line="1" dir="auto"><span class="list-bullet"></span><strong>Ἐλθών</strong>: participio aoristo attivo, nominativo singolare di <em>ἔρχομαι</em>, "giungendo".</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span><strong>γαῖαν τήνδ᾽</strong>: accusativo di <em>γαῖα</em>, "questa terra".</li>
+<li data-line="3" dir="auto"><span class="list-bullet"></span><strong>ἐβουφόρβουν</strong>: verbo imperfetto indicativo attivo, 1ª persona singolare di <em>βουφορβέω</em>, "custodivo".</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span><strong>ξένῳ</strong>: dativo singolare di <em>ξένος</em>, "all'ospite".</li>
+<li data-line="5" dir="auto"><span class="list-bullet"></span><strong>καὶ τόνδ᾽</strong>: "e questa".</li>
+<li data-line="6" dir="auto"><span class="list-bullet"></span><strong>ἔσῳζον</strong>: verbo imperfetto indicativo attivo, 1ª persona singolare di <em>σῴζω</em>, "salvavo".</li>
+<li data-line="7" dir="auto"><span class="list-bullet"></span><strong>οἶκον</strong>: accusativo singolare di <em>οἶκος</em>, "casa".</li>
+<li data-line="8" dir="auto"><span class="list-bullet"></span><strong>ἐς τόδ᾽ ἡμέρας</strong>: "fino a questo giorno".</li>
+<li data-line="9" dir="auto"><span class="list-bullet"></span><strong>Sintassi</strong>: Frase principale con partecipiali descrittivi; Apollo spiega il suo servizio presso Admeto.</li>
+</ul>
+</li>
+</ol></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto">Il passo di Apollo presenta diverse figure retoriche, tipiche dello stile poetico e tragico greco. Ecco un'analisi delle principali:</p></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="1. **Apostrofe**" dir="auto" class="heading" id="1._**Apostrofe**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>1. <strong>Apostrofe</strong></h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>Ὦ δώματ᾽ Ἀδμήτει</strong>: Apollo si rivolge direttamente alle dimore di Admeto, coinvolgendole emotivamente nel discorso.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Funzione: crea un tono drammatico e solenne.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="2. **Iperbato**" dir="auto" class="heading" id="2._**Iperbato**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>2. <strong>Iperbato</strong></h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>ἐν οἷς θῆσσαν τραπέζαν αἰνεσαι θεβέπερώας</strong>: la collocazione dell'aggettivo <strong>θεβέπερώας</strong> (divini ospiti) alla fine della frase separa il soggetto dalla sua descrizione.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Funzione: conferisce enfasi e una struttura più musicale alla frase.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="3. **Climax**" dir="auto" class="heading" id="3._**Climax**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>3. <strong>Climax</strong></h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>στέρνοισιν ἔμβαλων φλόγα... τέκτονας Δίου πυρός... Κύκλωπας</strong>: il discorso segue un crescendo emotivo che culmina nell’atto di Apollo che uccide i Ciclopi, responsabili del fuoco divino.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Funzione: intensifica il pathos e mostra l'ira divina.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="4. **Antitesi**" dir="auto" class="heading" id="4._**Antitesi**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>4. <strong>Antitesi</strong></h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>οὐ δὴ χολωθεὶς τέκτονας... κτείνω Κύκλωπας</strong>: Apollo sottolinea che la sua azione non è stata guidata dalla collera ma dalla giustizia.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Funzione: chiarisce la motivazione delle azioni divine e sottolinea il contrasto tra collera e giustizia.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="5. **Allitterazione**" dir="auto" class="heading" id="5._**Allitterazione**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>5. <strong>Allitterazione</strong></h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>στέρνοισιν ἔμβαλων φλόγα</strong>: ripetizione della "φ" e della "λ", che richiama il suono del fuoco e amplifica la tensione drammatica.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span><strong>καί με θήτευείν πατήρ θνητῷ</strong>: ripetizione della "θ", che enfatizza l'umiliazione subita da Apollo.</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>Funzione: rende il testo più armonioso e musicale.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="6. **Metafora**" dir="auto" class="heading" id="6._**Metafora**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>6. <strong>Metafora</strong></h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>στέρνοισιν ἔμβαλων φλόγα</strong>: il "fuoco nel petto" simboleggia l’ira divina di Zeus contro Asclepio.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Funzione: rappresenta in modo vivace ed evocativo l’azione divina.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="7. **Metonimia**" dir="auto" class="heading" id="7._**Metonimia**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>7. <strong>Metonimia</strong></h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>Δίου πυρός</strong>: il "fuoco di Zeus" è una metonimia per il fulmine, l’arma di Zeus.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Funzione: arricchisce il testo di significati simbolici legati al potere divino.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="8. **Poliptoto**" dir="auto" class="heading" id="8._**Poliptoto**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>8. <strong>Poliptoto</strong></h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>παῖδὰ τὸν ἐμὸν Ἀσκληπιον</strong>: variazione del caso del termine <strong>παῖς</strong> (figlio) per enfatizzare la relazione paterna e la sofferenza di Apollo.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Funzione: sottolinea il legame emotivo tra Apollo e Asclepio.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="9. **Enjambement (Struttura poetica)**" dir="auto" class="heading" id="9._**Enjambement_(Struttura_poetica)**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>9. <strong>Enjambement (Struttura poetica)</strong></h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>Ἐλθὼν δὲ γαῖαν τήνδ᾽ ἐβουφόρβουν ξένῳ καὶ τόνδ᾽ ἔσῳζον οἶκον ἐς τόδ᾽ ἡμέρας</strong>: la frase si sviluppa in maniera fluida, con un'interruzione che conduce alla successiva idea.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Funzione: aumenta il ritmo narrativo e mantiene la tensione.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="10. **Ironia tragica**" dir="auto" class="heading" id="10._**Ironia_tragica**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>10. <strong>Ironia tragica</strong></h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>καί με θήτευείν πατήρ θνητῷ παρ᾽ ἀνδρὶ</strong>: Apollo, un dio, è costretto a servire un mortale, Admeto, per espiare un'azione divina.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Funzione: evidenzia il paradosso della condizione divina sottoposta alle leggi e alle punizioni.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="11. **Anastrofe**" dir="auto" class="heading" id="11._**Anastrofe**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>11. <strong>Anastrofe</strong></h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>τῶνδ᾽ ἀποιν᾿ ἡνάγκασεν</strong>: l’ordine invertito tra <strong>τῶνδ᾽</strong> (di queste) e <strong>ἀποιν᾿</strong> (pena) crea un effetto enfatico sulla punizione subita.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Funzione: attira l’attenzione sulla parola chiave "pena".</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="12. **Parallelismo**" dir="auto" class="heading" id="12._**Parallelismo**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>12. <strong>Parallelismo</strong></h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>ἐβουφόρβουν ξένῳ καὶ τόνδ᾽ ἔσῳζον οἶκον</strong>: due azioni parallele (custodire e salvare) che sottolineano il ruolo di Apollo come servitore fedele.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>Funzione: enfatizza la dedizione di Apollo al suo compito.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="**Testo greco**" dir="auto" class="heading" id="**Testo_greco**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><strong>Testo greco</strong></h3></div><div class="el-p"><p dir="auto">Ὁσίου γὰρ ἀνδρὸς ὅσιος ὢν ἐτύγχανον παιδός Φέρητος, Μοίρας δολώσας·<br>
+Ἔνεισαν δὲ μοι θεαί, ὧν θανεῖν ἐρρυσάμην, Ἄδμητον Δίδην·<br>
+τὸν παραυτίκ᾽ ἔκφυγεῖν, ἄλλον διαλλάξαντα τοὺς κάτω νεκρόν,<br>
+Πάντας δ' ἐλέγξας καὶ διεξελθὼν φίλους,<br>
+(πατέρα γεραιόν θ' ὃν σὺ ἔτικτε μητέρα),<br>
+οὐχ ηὗρε πλὴν γυναῖκός, ὅστις ἤθελε θανὼν πρὸ κείνου μηκέτ' εἰσορᾶν φάος·</p></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="**Analisi grammaticale**" dir="auto" class="heading" id="**Analisi_grammaticale**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><strong>Analisi grammaticale</strong></h3></div><div class="el-ol"><ol>
+<li data-line="0" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Ὁσίου</strong></p>
+<ul class="has-list-bullet">
+<li data-line="2" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Genitivo singolare.</li>
+<li data-line="3" dir="auto"><span class="list-bullet"></span><strong>Genere</strong>: Maschile.</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span><strong>Numero</strong>: Singolare.</li>
+<li data-line="5" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Concorda con <strong>ἀνδρὸς</strong> e indica una qualità (di un uomo santo).</li>
+</ul>
+</li>
+<li data-line="6" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>γὰρ</strong></p>
+<ul class="has-list-bullet">
+<li data-line="8" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Congiunzione coordinativa esplicativa.</li>
+<li data-line="9" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Introduce una spiegazione.</li>
+</ul>
+</li>
+<li data-line="10" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>ἀνδρὸς</strong></p>
+<ul class="has-list-bullet">
+<li data-line="12" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Genitivo singolare.</li>
+<li data-line="13" dir="auto"><span class="list-bullet"></span><strong>Genere</strong>: Maschile.</li>
+<li data-line="14" dir="auto"><span class="list-bullet"></span><strong>Numero</strong>: Singolare.</li>
+<li data-line="15" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Genitivo di specificazione legato a <strong>Ὁσίου</strong> (di un uomo santo).</li>
+</ul>
+</li>
+<li data-line="16" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>ὅσιος</strong></p>
+<ul class="has-list-bullet">
+<li data-line="18" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Nominativo singolare.</li>
+<li data-line="19" dir="auto"><span class="list-bullet"></span><strong>Genere</strong>: Maschile.</li>
+<li data-line="20" dir="auto"><span class="list-bullet"></span><strong>Numero</strong>: Singolare.</li>
+<li data-line="21" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Predicato nominale riferito al soggetto sottinteso (<strong>ἐγώ</strong>).</li>
+</ul>
+</li>
+<li data-line="22" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>ὢν</strong></p>
+<ul class="has-list-bullet">
+<li data-line="24" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Participio presente attivo di <strong>εἰμί</strong>.</li>
+<li data-line="25" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Nominativo maschile singolare.</li>
+<li data-line="26" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Concorda con il soggetto implicito (<strong>ἐγώ</strong>) ed esprime una qualità permanente.</li>
+</ul>
+</li>
+<li data-line="27" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>ἐτύγχανον</strong></p>
+<ul class="has-list-bullet">
+<li data-line="29" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Verbo indicativo imperfetto attivo di <strong>τυγχάνω</strong>.</li>
+<li data-line="30" dir="auto"><span class="list-bullet"></span><strong>Persona</strong>: Prima singolare.</li>
+<li data-line="31" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Esplicita un'azione continuativa o abituale nel passato.</li>
+</ul>
+</li>
+<li data-line="32" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>παιδός</strong></p>
+<ul class="has-list-bullet">
+<li data-line="34" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Genitivo singolare.</li>
+<li data-line="35" dir="auto"><span class="list-bullet"></span><strong>Genere</strong>: Maschile.</li>
+<li data-line="36" dir="auto"><span class="list-bullet"></span><strong>Numero</strong>: Singolare.</li>
+<li data-line="37" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Genitivo di relazione, specifica che Apollo è figlio di Fere.</li>
+</ul>
+</li>
+<li data-line="38" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Φέρητος</strong></p>
+<ul class="has-list-bullet">
+<li data-line="40" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Genitivo singolare.</li>
+<li data-line="41" dir="auto"><span class="list-bullet"></span><strong>Genere</strong>: Maschile.</li>
+<li data-line="42" dir="auto"><span class="list-bullet"></span><strong>Numero</strong>: Singolare.</li>
+<li data-line="43" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Concorda con <strong>παιδός</strong> e identifica il genitore.</li>
+</ul>
+</li>
+<li data-line="44" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Μοίρας</strong></p>
+<ul class="has-list-bullet">
+<li data-line="46" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Accusativo plurale.</li>
+<li data-line="47" dir="auto"><span class="list-bullet"></span><strong>Genere</strong>: Femminile.</li>
+<li data-line="48" dir="auto"><span class="list-bullet"></span><strong>Numero</strong>: Plurale.</li>
+<li data-line="49" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Complemento oggetto di <strong>δολώσας</strong> (le Moire sono state ingannate).</li>
+</ul>
+</li>
+<li data-line="50" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>δολώσας</strong></p>
+<ul class="has-list-bullet">
+<li data-line="52" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Participio aoristo attivo di <strong>δολόω</strong>.</li>
+<li data-line="53" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Nominativo maschile singolare.</li>
+<li data-line="54" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Concorda con il soggetto sottinteso e indica un'azione completata.</li>
+</ul>
+</li>
+<li data-line="55" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Ἔνεισαν</strong></p>
+<ul class="has-list-bullet">
+<li data-line="57" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Verbo indicativo aoristo attivo di <strong>ἐνίημι</strong>.</li>
+<li data-line="58" dir="auto"><span class="list-bullet"></span><strong>Persona</strong>: Terza plurale.</li>
+<li data-line="59" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Azione puntuale riferita alle dee.</li>
+</ul>
+</li>
+<li data-line="60" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>μοι</strong></p>
+<ul class="has-list-bullet">
+<li data-line="62" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Dativo singolare.</li>
+<li data-line="63" dir="auto"><span class="list-bullet"></span><strong>Genere</strong>: Non applicabile.</li>
+<li data-line="64" dir="auto"><span class="list-bullet"></span><strong>Numero</strong>: Singolare.</li>
+<li data-line="65" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Complemento di vantaggio (per me).</li>
+</ul>
+</li>
+<li data-line="66" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>θεαί</strong></p>
+<ul class="has-list-bullet">
+<li data-line="68" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Nominativo plurale.</li>
+<li data-line="69" dir="auto"><span class="list-bullet"></span><strong>Genere</strong>: Femminile.</li>
+<li data-line="70" dir="auto"><span class="list-bullet"></span><strong>Numero</strong>: Plurale.</li>
+<li data-line="71" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Soggetto di <strong>Ἔνεισαν</strong>.</li>
+</ul>
+</li>
+<li data-line="72" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>ὧν</strong></p>
+<ul class="has-list-bullet">
+<li data-line="74" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Genitivo plurale.</li>
+<li data-line="75" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Pronome relativo, con funzione di genitivo partitivo.</li>
+</ul>
+</li>
+<li data-line="76" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>θανεῖν</strong></p>
+<ul class="has-list-bullet">
+<li data-line="78" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Infinito aoristo attivo di <strong>θνῄσκω</strong>.</li>
+<li data-line="79" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Oggetto dell’azione implicita di <strong>ἐρρυσάμην</strong>.</li>
+</ul>
+</li>
+<li data-line="80" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>ἐρρυσάμην</strong></p>
+<ul class="has-list-bullet">
+<li data-line="82" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Verbo indicativo aoristo medio di <strong>ῥύομαι</strong>.</li>
+<li data-line="83" dir="auto"><span class="list-bullet"></span><strong>Persona</strong>: Prima singolare.</li>
+<li data-line="84" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Indica l’azione del soggetto che salva Admeto dalla morte.</li>
+</ul>
+</li>
+<li data-line="85" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Ἄδμητον</strong></p>
+<ul class="has-list-bullet">
+<li data-line="87" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Accusativo singolare.</li>
+<li data-line="88" dir="auto"><span class="list-bullet"></span><strong>Genere</strong>: Maschile.</li>
+<li data-line="89" dir="auto"><span class="list-bullet"></span><strong>Numero</strong>: Singolare.</li>
+<li data-line="90" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Complemento oggetto di <strong>ἐρρυσάμην</strong>.</li>
+</ul>
+</li>
+<li data-line="91" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Δίδην</strong></p>
+<ul class="has-list-bullet">
+<li data-line="93" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Accusativo singolare.</li>
+<li data-line="94" dir="auto"><span class="list-bullet"></span><strong>Genere</strong>: Femminile.</li>
+<li data-line="95" dir="auto"><span class="list-bullet"></span><strong>Numero</strong>: Singolare.</li>
+<li data-line="96" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Apposizione a <strong>Ἄδμητον</strong>, indica la morte o il regno dei morti.</li>
+</ul>
+</li>
+</ol></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="Testo greco" dir="auto" class="heading" id="Testo_greco_1"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Testo greco</h3></div><div class="el-p"><p dir="auto">τὸν παραυτίκ᾽ ἔκφυγεῖν, ἄλλον διαλλάξαντα τοὺς κάτω νεκρόν,<br>
+Πάντας δ' ἐλέγξας καὶ διεξελθὼν φίλους,<br>
+(πατέρα γεραιόν θ' ὃν σὺ ἔτικτε μητέρα),<br>
+οὐχ ηὗρε πλὴν γυναῖκός, ὅστις ἤθελε θανὼν πρὸ κείνου μηκέτ' εἰσορᾶν φάος·</p></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="**Analisi grammaticale**" dir="auto" class="heading" id="**Analisi_grammaticale**_1"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><strong>Analisi grammaticale</strong></h3></div><div class="el-ol"><ol start="19">
+<li data-line="0" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>τὸν</strong></p>
+<ul class="has-list-bullet">
+<li data-line="2" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Accusativo singolare.</li>
+<li data-line="3" dir="auto"><span class="list-bullet"></span><strong>Genere</strong>: Maschile.</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span><strong>Numero</strong>: Singolare.</li>
+<li data-line="5" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Articolo determinativo che concorda con <strong>Ἄδμητον</strong> (Admeto).</li>
+</ul>
+</li>
+<li data-line="6" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>παραυτίκ᾽</strong></p>
+<ul class="has-list-bullet">
+<li data-line="8" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Avverbio.</li>
+<li data-line="9" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Indica immediatezza, "subito".</li>
+</ul>
+</li>
+<li data-line="10" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>ἔκφυγεῖν</strong></p>
+<ul class="has-list-bullet">
+<li data-line="12" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Infinito aoristo attivo di <strong>ἐκφεύγω</strong>.</li>
+<li data-line="13" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Infinito usato come oggetto implicito dell’azione di <strong>ἐρρυσάμην</strong>.</li>
+</ul>
+</li>
+<li data-line="14" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>ἄλλον</strong></p>
+<ul class="has-list-bullet">
+<li data-line="16" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Accusativo singolare.</li>
+<li data-line="17" dir="auto"><span class="list-bullet"></span><strong>Genere</strong>: Maschile.</li>
+<li data-line="18" dir="auto"><span class="list-bullet"></span><strong>Numero</strong>: Singolare.</li>
+<li data-line="19" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Complemento oggetto di <strong>διαλλάξαντα</strong>.</li>
+</ul>
+</li>
+<li data-line="20" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>διαλλάξαντα</strong></p>
+<ul class="has-list-bullet">
+<li data-line="22" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Participio aoristo attivo di <strong>διαλλάσσω</strong>.</li>
+<li data-line="23" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Accusativo maschile singolare.</li>
+<li data-line="24" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Concorda con <strong>ἄλλον</strong> e descrive l'azione di sostituire Admeto con un altro.</li>
+</ul>
+</li>
+<li data-line="25" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>τοὺς κάτω</strong></p>
+<ul class="has-list-bullet">
+<li data-line="27" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Accusativo plurale.</li>
+<li data-line="28" dir="auto"><span class="list-bullet"></span><strong>Genere</strong>: Maschile.</li>
+<li data-line="29" dir="auto"><span class="list-bullet"></span><strong>Numero</strong>: Plurale.</li>
+<li data-line="30" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Complemento oggetto implicito di <strong>διαλλάξαντα</strong>, riferito ai morti.</li>
+</ul>
+</li>
+<li data-line="31" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>νεκρόν</strong></p>
+<ul class="has-list-bullet">
+<li data-line="33" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Accusativo singolare.</li>
+<li data-line="34" dir="auto"><span class="list-bullet"></span><strong>Genere</strong>: Maschile.</li>
+<li data-line="35" dir="auto"><span class="list-bullet"></span><strong>Numero</strong>: Singolare.</li>
+<li data-line="36" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Concorda con <strong>ἄλλον</strong>, specifica la natura del "sostituto" di Admeto.</li>
+</ul>
+</li>
+<li data-line="37" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Πάντας</strong></p>
+<ul class="has-list-bullet">
+<li data-line="39" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Accusativo plurale.</li>
+<li data-line="40" dir="auto"><span class="list-bullet"></span><strong>Genere</strong>: Maschile.</li>
+<li data-line="41" dir="auto"><span class="list-bullet"></span><strong>Numero</strong>: Plurale.</li>
+<li data-line="42" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Complemento oggetto di <strong>ἐλέγξας</strong>.</li>
+</ul>
+</li>
+<li data-line="43" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>δ᾽</strong></p>
+<ul class="has-list-bullet">
+<li data-line="45" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Congiunzione avversativa (posposta).</li>
+<li data-line="46" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Introduce una nuova azione (ἐλέγξας).</li>
+</ul>
+</li>
+<li data-line="47" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>ἐλέγξας</strong></p>
+<ul class="has-list-bullet">
+<li data-line="49" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Participio aoristo attivo di <strong>ἐλέγχω</strong>.</li>
+<li data-line="50" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Nominativo maschile singolare.</li>
+<li data-line="51" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Concorda con il soggetto sottinteso (Apollo), indica l’azione di rimproverare o esaminare.</li>
+</ul>
+</li>
+<li data-line="52" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>καὶ</strong></p>
+<ul class="has-list-bullet">
+<li data-line="54" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Congiunzione coordinativa.</li>
+<li data-line="55" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Collega <strong>ἐλέγξας</strong> e <strong>διεξελθών</strong>.</li>
+</ul>
+</li>
+<li data-line="56" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>διεξελθὼν</strong></p>
+<ul class="has-list-bullet">
+<li data-line="58" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Participio aoristo attivo di <strong>διεξέρχομαι</strong>.</li>
+<li data-line="59" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Nominativo maschile singolare.</li>
+<li data-line="60" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Concorda con il soggetto sottinteso (Apollo), descrive l’azione di passare in rassegna i suoi amici.</li>
+</ul>
+</li>
+<li data-line="61" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>φίλους</strong></p>
+<ul class="has-list-bullet">
+<li data-line="63" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Accusativo plurale.</li>
+<li data-line="64" dir="auto"><span class="list-bullet"></span><strong>Genere</strong>: Maschile.</li>
+<li data-line="65" dir="auto"><span class="list-bullet"></span><strong>Numero</strong>: Plurale.</li>
+<li data-line="66" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Complemento oggetto di <strong>διεξελθὼν</strong>.</li>
+</ul>
+</li>
+<li data-line="67" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>πατέρα</strong></p>
+<ul class="has-list-bullet">
+<li data-line="69" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Accusativo singolare.</li>
+<li data-line="70" dir="auto"><span class="list-bullet"></span><strong>Genere</strong>: Maschile.</li>
+<li data-line="71" dir="auto"><span class="list-bullet"></span><strong>Numero</strong>: Singolare.</li>
+<li data-line="72" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Complemento oggetto sottinteso di <strong>διεξελθὼν</strong>, riferito al padre di Admeto.</li>
+</ul>
+</li>
+<li data-line="73" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>γεραιόν</strong></p>
+<ul class="has-list-bullet">
+<li data-line="75" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Accusativo singolare.</li>
+<li data-line="76" dir="auto"><span class="list-bullet"></span><strong>Genere</strong>: Maschile.</li>
+<li data-line="77" dir="auto"><span class="list-bullet"></span><strong>Numero</strong>: Singolare.</li>
+<li data-line="78" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Concorda con <strong>πατέρα</strong>, aggiunge un attributo (vecchio).</li>
+</ul>
+</li>
+<li data-line="79" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>θ᾽</strong></p>
+<ul class="has-list-bullet">
+<li data-line="81" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Congiunzione copulativa abbreviata di <strong>καί</strong>.</li>
+<li data-line="82" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Collega <strong>πατέρα</strong> e <strong>μητέρα</strong>.</li>
+</ul>
+</li>
+<li data-line="83" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>ὃν</strong></p>
+<ul class="has-list-bullet">
+<li data-line="85" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Accusativo singolare.</li>
+<li data-line="86" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Pronome relativo che si riferisce a <strong>μητέρα</strong>.</li>
+</ul>
+</li>
+<li data-line="87" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>σὺ</strong></p>
+<ul class="has-list-bullet">
+<li data-line="89" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Nominativo singolare.</li>
+<li data-line="90" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Pronome personale che sottolinea il soggetto (tu).</li>
+</ul>
+</li>
+<li data-line="91" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>ἔτικτε</strong></p>
+<ul class="has-list-bullet">
+<li data-line="93" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Verbo indicativo imperfetto attivo di <strong>τίκτω</strong>.</li>
+<li data-line="94" dir="auto"><span class="list-bullet"></span><strong>Persona</strong>: Terza singolare.</li>
+<li data-line="95" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Indica l’azione continuativa di generare.</li>
+</ul>
+</li>
+<li data-line="96" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>μητέρα</strong></p>
+<ul class="has-list-bullet">
+<li data-line="98" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Accusativo singolare.</li>
+<li data-line="99" dir="auto"><span class="list-bullet"></span><strong>Genere</strong>: Femminile.</li>
+<li data-line="100" dir="auto"><span class="list-bullet"></span><strong>Numero</strong>: Singolare.</li>
+<li data-line="101" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Complemento oggetto di <strong>διεξελθὼν</strong> (la madre di Admeto).</li>
+</ul>
+</li>
+<li data-line="102" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>οὐχ</strong></p>
+<ul class="has-list-bullet">
+<li data-line="104" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Avverbio di negazione.</li>
+<li data-line="105" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Esprime una negazione forte.</li>
+</ul>
+</li>
+<li data-line="106" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>ηὗρε</strong></p>
+<ul class="has-list-bullet">
+<li data-line="108" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Verbo indicativo aoristo attivo di <strong>εὑρίσκω</strong>.</li>
+<li data-line="109" dir="auto"><span class="list-bullet"></span><strong>Persona</strong>: Terza singolare.</li>
+<li data-line="110" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Indica un’azione conclusa nel passato (non trovò).</li>
+</ul>
+</li>
+<li data-line="111" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>πλὴν</strong></p>
+<ul class="has-list-bullet">
+<li data-line="113" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Preposizione.</li>
+<li data-line="114" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Introduce un’eccezione (tranne).</li>
+</ul>
+</li>
+<li data-line="115" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>γυναῖκός</strong></p>
+<ul class="has-list-bullet">
+<li data-line="117" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Genitivo singolare.</li>
+<li data-line="118" dir="auto"><span class="list-bullet"></span><strong>Genere</strong>: Femminile.</li>
+<li data-line="119" dir="auto"><span class="list-bullet"></span><strong>Numero</strong>: Singolare.</li>
+<li data-line="120" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Complemento partitivo (eccetto la moglie).</li>
+</ul>
+</li>
+<li data-line="121" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>ὅστις</strong></p>
+<ul class="has-list-bullet">
+<li data-line="123" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Nominativo singolare.</li>
+<li data-line="124" dir="auto"><span class="list-bullet"></span><strong>Genere</strong>: Maschile.</li>
+<li data-line="125" dir="auto"><span class="list-bullet"></span><strong>Numero</strong>: Singolare.</li>
+<li data-line="126" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Pronome relativo.</li>
+</ul>
+</li>
+<li data-line="127" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>ἤθελε</strong></p>
+<ul class="has-list-bullet">
+<li data-line="129" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Verbo indicativo imperfetto attivo di <strong>θέλω</strong>.</li>
+<li data-line="130" dir="auto"><span class="list-bullet"></span><strong>Persona</strong>: Terza singolare.</li>
+<li data-line="131" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Indica volontà o desiderio continuativo nel passato.</li>
+</ul>
+</li>
+<li data-line="132" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>θανὼν</strong></p>
+<ul class="has-list-bullet">
+<li data-line="134" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Participio aoristo attivo di <strong>θνῄσκω</strong>.</li>
+<li data-line="135" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Nominativo singolare.</li>
+<li data-line="136" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Concorda con il soggetto implicito (la moglie).</li>
+</ul>
+</li>
+<li data-line="137" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>πρὸ</strong></p>
+<ul class="has-list-bullet">
+<li data-line="139" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Preposizione con genitivo.</li>
+<li data-line="140" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Indica priorità (prima di).</li>
+</ul>
+</li>
+<li data-line="141" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>κείνου</strong></p>
+<ul class="has-list-bullet">
+<li data-line="143" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Genitivo singolare.</li>
+<li data-line="144" dir="auto"><span class="list-bullet"></span><strong>Genere</strong>: Maschile.</li>
+<li data-line="145" dir="auto"><span class="list-bullet"></span><strong>Numero</strong>: Singolare.</li>
+<li data-line="146" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Complemento di specificazione (prima di lui).</li>
+</ul>
+</li>
+<li data-line="147" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>μηκέτ'</strong></p>
+<ul class="has-list-bullet">
+<li data-line="149" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Avverbio di negazione.</li>
+<li data-line="150" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Indica una negazione definitiva (non più).</li>
+</ul>
+</li>
+<li data-line="151" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>εἰσορᾶν</strong></p>
+<ul class="has-list-bullet">
+<li data-line="153" dir="auto"><span class="list-bullet"></span><strong>Parte del discorso</strong>: Infinito presente attivo di <strong>εἰσοράω</strong>.</li>
+<li data-line="154" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Espressione dell’azione di "vedere".</li>
+</ul>
+</li>
+<li data-line="155" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>φάος</strong></p>
+<ul class="has-list-bullet">
+<li data-line="157" dir="auto"><span class="list-bullet"></span><strong>Caso</strong>: Accusativo singolare.</li>
+<li data-line="158" dir="auto"><span class="list-bullet"></span><strong>Genere</strong>: Neutro.</li>
+<li data-line="159" dir="auto"><span class="list-bullet"></span><strong>Numero</strong>: Singolare.</li>
+<li data-line="160" dir="auto"><span class="list-bullet"></span><strong>Funzione</strong>: Complemento oggetto di <strong>εἰσορᾶν</strong> (la luce).</li>
+</ul>
+</li>
+</ol></div><div class="el-hr"><hr></div><div class="el-p"><p dir="auto">Ecco l'analisi delle figure retoriche presenti nel passo greco. Il testo offre numerose espressioni poetiche e stilistiche che arricchiscono la narrazione:</p></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="**1. Figura etimologica**" dir="auto" class="heading" id="**1._Figura_etimologica**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><strong>1. Figura etimologica</strong></h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>Ὁσίου... ὅσιος</strong>: Il termine "ὅσιος" è ripetuto e rafforzato dall'accostamento con "Ὁσίου". È una figura etimologica, in cui due parole della stessa radice vengono utilizzate per enfatizzare l'idea della santità.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="**2. Allitterazione**" dir="auto" class="heading" id="**2._Allitterazione**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><strong>2. Allitterazione</strong></h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>Μοίρας δολώσας</strong>: Ripetizione della consonante "δ" per creare un effetto di musicalità.</li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span><strong>πατέρα γεραιόν</strong>: Ripetizione della "ρ", che contribuisce a una sonorità grave e solenne.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="**3. Antitesi**" dir="auto" class="heading" id="**3._Antitesi**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><strong>3. Antitesi</strong></h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>Ἄδμητον... τοὺς κάτω νεκρόν</strong>: Contrasto tra Admeto (il vivente) e i morti degli inferi, evidenziando il conflitto tra la vita e la morte.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="**4. Anastrofe**" dir="auto" class="heading" id="**4._Anastrofe**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><strong>4. Anastrofe</strong></h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>Ἔνεισαν δὲ μοι θεαί</strong>: L'ordine delle parole pone "μοι" (a me) prima del soggetto ("θεαί"), enfatizzando l’idea del beneficio personale ricevuto da Apollo.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="**5. Paronomasia**" dir="auto" class="heading" id="**5._Paronomasia**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><strong>5. Paronomasia</strong></h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>ἄλλον... νεκρόν</strong>: Accostamento di termini con suoni simili (ripetizione della "ν") per sottolineare il sacrificio di un'altra persona al posto di Admeto.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="**6. Climax**" dir="auto" class="heading" id="**6._Climax**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><strong>6. Climax</strong></h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>Πάντας δ' ἐλέγξας καὶ διεξελθὼν φίλους</strong>: Progressione ascendente che culmina nell'enumerazione di tutti gli amici esaminati da Apollo, sottolineando la portata dell'azione.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="**7. Polisindeto**" dir="auto" class="heading" id="**7._Polisindeto**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><strong>7. Polisindeto</strong></h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>πατέρα γεραιόν θ'... μητέρα</strong>: L'uso della congiunzione "θ'" (forma contratta di "καί") ripetuta sottolinea la connessione tra il padre e la madre, evidenziando la loro colpevole mancanza di sacrificio.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="**8. Litote**" dir="auto" class="heading" id="**8._Litote**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><strong>8. Litote</strong></h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>οὐχ ηὗρε πλὴν γυναῖκός</strong>: La negazione ("οὐχ") con "πλὴν" (eccetto) minimizza la ricerca fallita, rendendo più drammatico il sacrificio della moglie.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="**9. Figura di pathos (commozione)**" dir="auto" class="heading" id="**9._Figura_di_pathos_(commozione)**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><strong>9. Figura di pathos (commozione)</strong></h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>ὅστις ἤθελε θανὼν πρὸ κείνου</strong>: L’enfasi sul sacrificio volontario della moglie di Admeto crea un forte impatto emotivo, evocando compassione per il gesto altruistico.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="**10. Perifrasi**" dir="auto" class="heading" id="**10._Perifrasi**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><strong>10. Perifrasi</strong></h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>τοὺς κάτω νεκρόν</strong>: Perifrasi per indicare "gli inferi" o "i morti", evocando la condizione dei defunti senza nominarli direttamente.</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="**11. Epanadiplosi**" dir="auto" class="heading" id="**11._Epanadiplosi**_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><strong>11. Epanadiplosi</strong></h3></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><strong>θανὼν πρὸ κείνου... μηκέτ' εἰσορᾶν φάος</strong>: La frase si chiude con un concetto simile a quello iniziale (morte e perdita della luce), creando una circolarità tematica.</li>
+</ul></div><div class="el-hr"><hr></div><div class="footer"><div class="data-bar"></div></div></div></div></div><div id="right-content" class="leaf" style="--sidebar-width: var(--sidebar-width-right);"></div></div></div></body></html>
